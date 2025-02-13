@@ -1,0 +1,63 @@
+body{
+	background: #282828;
+	color: #f6e187;
+}
+a,a[href]{
+    color:#83a598 !important;
+}
+.small{
+    font-size: small;
+}
+p{
+    margin-top:-5px;
+}
+ul{
+    margin: 10px;
+    padding: 0;
+    list-style-type: square;
+}
+p+ul{
+    margin-top: -15px;
+}
+[id*="asciicast-iframe"]{
+    width:50%!important;
+}
+img{
+    max-width:50%;
+}
+.code-block code{
+    display:block;
+    white-space:pre-wrap;
+}
+.code-block{
+    background-color:#1d2021;
+    color:#fbf1c7;
+    padding:10px;
+    font-size:12px;
+    max-width:50%;
+    overflow-x:auto;
+}
+.code-block code{
+    font-family:'Terminus','Courier New',Courier,monospace;
+}
+
+@font-face{
+    font-family:'Terminus';
+    src: url('/f/terminus.tff')format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+.navbar{
+    background-color:#1d2021;
+    width:250px;
+
+}
+.navbar ul{
+    list-style-type:none;
+}
+.navbar ul li a{
+    text-decoration:none;
+    font-size:18px;
+    padding:5px;
+    display:inline-block;
+}
