@@ -1,6 +1,7 @@
 body{
 	background: #282828;
 	color: #f6e187;
+    font-family: 'Noto Sans', sans-serif;
 }
 a,a[href]{
     color:#83a598 !important;
@@ -60,4 +61,65 @@ img{
     font-size:18px;
     padding:5px;
     display:inline-block;
+}
+.container p{
+  display: inline-block;
+}
+.track-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    position: relative;
+}
+.album-art {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 10px;
+    object-fit: cover;
+    z-index: 1000;
+}
+.track-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    position: relative;
+}
+.track-name {
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    color: #ebdbb2;
+}
+.artist-name {
+    font-size: 18px;
+    color: #fbf1c7;
+    bottom:20px;
+}
+@keyframes scrollText{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+.scrolling-wrapper{
+    display:flex;
+    flex-wrap:nowrap;
+    animation:scrollText linear infinite;
+}
+.track-name-wrapper{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.track-name-wrapper.track-name{
+    padding-right:100px;
+}
+.scrolling{
+    animation:scrollText 35s linear infinite;
 }
